@@ -1,0 +1,37 @@
+# --- Python 通用忽略 ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- 3DGS 特有忽略 (非常重要) ---
+# 忽略训练输出目录
+output/
+# 忽略数据集目录
+data/
+# 忽略所有编译生成的 build 文件夹 (包括 submodules 下的)
+**/build/
+
+# --- IDE 配置 ---
+.idea/
+.vscode/
+*.swp
+
+# --- 系统文件 ---
+.DS_Store
