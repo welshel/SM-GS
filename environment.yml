@@ -6,11 +6,15 @@ channels:
 dependencies:
   - python=3.10
   - pip
-  - cudatoolkit
   - pytorch==2.1.2
   - torchvision==0.16.2
   - pytorch-cuda=11.8
   - pip:
+    - numpy<2
+    - torch-scatter
+    - opencv-python
+    - einops        
+    - colorama     
     - tqdm
     - plyfile
     - scikit-learn
@@ -20,4 +24,3 @@ dependencies:
     - argparse
     - wheel
     - typing_extensions
-    - wandb 
